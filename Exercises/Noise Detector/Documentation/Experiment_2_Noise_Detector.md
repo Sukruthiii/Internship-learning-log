@@ -547,10 +547,6 @@ Add the following screenshots to the `Screenshots` folder in this experiment's G
 | Screenshot filename          | Content                                  |
 | ---------------------------- | ---------------------------------------- |
 | `01_Front_Panel.png`         | Input cluster and output indicators      |
-| `02_Sine_Generation.png`     | Original sine-wave For Loop              |
-| `03_Noise_Generation.png`    | Random noise generation                  |
-| `04_Signal_Addition.png`     | Add and Build Array implementation       |
-| `05_Noise_Detection.png`     | Abs, Mean, Greater? and Case Structure   |
-| `06_Final_Block_Diagram.png` | Complete VI implementation               |
+| `02_Final_Block_Diagram.png` | Complete VI implementation               |
 
 **Technical note:** Average absolute noise is a measure of noise magnitude, not SNR. The simulated noise in this experiment is uniformly distributed, not Gaussian noise.
