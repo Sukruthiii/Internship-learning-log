@@ -82,9 +82,7 @@ The loop iteration terminal `i` starts at zero and increments by one. It provide
 The phase for each sample is calculated using:
 
 $$
-
 \theta[n] = \frac{2\pi f n}{F_s}
-
 $$
 
 where:
@@ -117,9 +115,7 @@ Only the selected case executes on each loop iteration.
 The equation is:
 
 $$
-
 x[n] = A\sin\left(\frac{2\pi f n}{F_s}\right)
-
 $$
 
 Connections:
@@ -135,13 +131,11 @@ The Sine function returns values between -1 and +1. Multiplying by amplitude A s
 The square wave switches between +A and -A:
 
 $$
-
 x[n] =
 \begin{cases}
 +A, & \sin(\theta[n]) \geq 0\\
 -A, & \sin(\theta[n]) < 0
 \end{cases}
-
 $$
 
 Connections:
@@ -160,9 +154,7 @@ Connections:
 The triangle wave is generated using:
 
 $$
-
 x[n] = \frac{2A}{\pi}\sin^{-1}(\sin(\theta[n]))
-
 $$
 
 Connections:
@@ -198,17 +190,13 @@ Its main inputs are:
 The sampling interval is:
 
 $$
-
 dt = \frac{1}{F_s}
-
 $$
 
 For $F_s = 100$ Hz:
 
 $$
-
 dt = \frac{1}{100} = 0.01\text{ s}
-
 $$
 
 A constant of zero is wired to `t0`, meaning the first sample occurs at time zero.
@@ -244,9 +232,7 @@ Sampling frequency $F_s$ is the number of samples generated or acquired per seco
 The time between samples is:
 
 $$
-
 dt = \frac{1}{F_s}
-
 $$
 
 At 100 Hz, the interval is 0.01 seconds.
@@ -256,9 +242,7 @@ At 100 Hz, the interval is 0.01 seconds.
 The time associated with sample index $n$, when the first sample starts at zero, is:
 
 $$
-
 t[n] = \frac{n}{F_s}
-
 $$
 
 For 100 Hz, the first few sample times are 0, 0.01, 0.02, 0.03 seconds, and so on.
@@ -268,9 +252,7 @@ For 100 Hz, the first few sample times are 0, 0.01, 0.02, 0.03 seconds, and so o
 Signal frequency $f$ is the number of cycles per second. The period of one cycle is:
 
 $$
-
 T = \frac{1}{f}
-
 $$
 
 For a 5 Hz signal, one cycle takes 0.2 seconds.
@@ -278,17 +260,13 @@ For a 5 Hz signal, one cycle takes 0.2 seconds.
 ### Samples per cycle
 
 $$
-
 \text{Samples per cycle} = \frac{F_s}{f}
-
 $$
 
 For a 5 Hz signal sampled at 100 Hz:
 
 $$
-
 \frac{100}{5} = 20
-
 $$
 
 There are 20 samples per cycle.
@@ -298,9 +276,7 @@ There are 20 samples per cycle.
 The nominal record duration is:
 
 $$
-
 \text{Duration} = \frac{N}{F_s}
-
 $$
 
 For 100 samples at 100 Hz, this is 1 second.
@@ -308,9 +284,7 @@ For 100 samples at 100 Hz, this is 1 second.
 However, if the first sample is at time zero, the last sample occurs at:
 
 $$
-
 t_{\text{last}} = \frac{N-1}{F_s}
-
 $$
 
 For 100 samples at 100 Hz, the last sample is at 0.99 seconds.
@@ -318,17 +292,13 @@ For 100 samples at 100 Hz, the last sample is at 0.99 seconds.
 ### Number of cycles
 
 $$
-
 \text{Cycles} = \frac{Nf}{F_s}
-
 $$
 
 For 100 samples, a 5 Hz signal, and a 100 Hz sampling frequency:
 
 $$
-
 \frac{100 \times 5}{100} = 5\text{ cycles}
-
 $$
 
 ## 9. Nyquist sampling theorem
@@ -336,9 +306,7 @@ $$
 For a band-limited signal, the sampling frequency must be greater than twice the highest frequency component to allow ideal reconstruction:
 
 $$
-
 F_s > 2f_{\max}
-
 $$
 
 The theoretical boundary is called the Nyquist rate. In practical systems, sampling exactly at the boundary is not a good design choice. A higher sampling frequency is normally selected, and an anti-aliasing filter is used before sampling to limit frequencies above the intended measurement bandwidth.
