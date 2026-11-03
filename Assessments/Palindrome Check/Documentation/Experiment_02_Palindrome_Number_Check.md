@@ -91,26 +91,6 @@ The final reversed number is obtained from the right-side output of the While Lo
 | 7 | 7 | TRUE |
 | 0 | 0 | TRUE |
 
-## Screenshots
-
-### Front Panel
-
-Displays the input number control and the Boolean palindrome indicator.
-
-![Front Panel](Screenshots/Front_Panel.png)
-
-### Block Diagram
-
-Shows the While Loop, Shift Registers, Quotient & Remainder function, arithmetic operations, and comparison logic.
-
-![Block Diagram](Screenshots/Block_Diagram.png)
-
-### Output
-
-Demonstrates the VI with sample inputs and their corresponding Boolean results.
-
-![Output](Screenshots/Output.png)
-
 ## Learning Outcomes
 
 - Understood how to reverse a number using mathematical operations.
