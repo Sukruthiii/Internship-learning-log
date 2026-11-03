@@ -141,27 +141,8 @@ The Shift Registers retain the values between successive loop iterations.
 
 **Result:** The actual output matches the expected output.
 
-## 8. Screenshots
 
-### Front Panel
-
-The Front Panel contains the Number of Terms control and Fibonacci Series array indicator.
-
-![Front Panel](Screenshots/Front_Panel.png)
-
-### Block Diagram
-
-The Block Diagram shows the For Loop, two Shift Registers, Add Function and auto-indexing output tunnel.
-
-![Block Diagram](Screenshots/Block_Diagram.png)
-
-### Output
-
-The output demonstrates the generated Fibonacci sequence for seven terms.
-
-![Output](Screenshots/Output.png)
-
-## 9. Learning Outcomes
+## 8. Learning Outcomes
 
 Through this experiment, the following LabVIEW concepts were understood:
 
@@ -174,7 +155,7 @@ Through this experiment, the following LabVIEW concepts were understood:
 - Creating and displaying numeric arrays using Array Indicators.
 - Selecting appropriate numeric representations for integer calculations.
 
-## 10. Conclusion
+## 9. Conclusion
 
 The Fibonacci Series Generation program was successfully implemented in LabVIEW using a For Loop, two Shift Registers and an Add Function.
 
@@ -182,7 +163,7 @@ The program accepts the required number of terms from the user, generates the Fi
 
 This experiment provided practical understanding of loops, Shift Registers, arithmetic operations and array generation in LabVIEW.
 
-## 11. Limitations
+## 10. Limitations
 
 - The program is intended for non-negative numbers of terms.
 - With the I64 representation, the largest value that fits is $2^{63}-1 = 9{,}223{,}372{,}036{,}854{,}775{,}807$. Since $F(92) = 7{,}540{,}113{,}804{,}746{,}346{,}429$ fits but $F(93)$ does not, and the loop computes one term ahead on every iteration, the number of terms should be limited to **91** to avoid integer overflow.
