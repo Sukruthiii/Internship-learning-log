@@ -2,26 +2,21 @@
 
 A LabVIEW virtual instrument (VI) that generates a noisy multi-tone signal, filters it with **Lowpass, Highpass, Bandpass and Bandstop** IIR Butterworth filters, and compares the input and output in both the **time domain** and the **frequency domain**.
 
-![LabVIEW](https://img.shields.io/badge/Built%20with-LabVIEW-yellow)
-![Filters](https://img.shields.io/badge/Filters-IIR%20Butterworth-blue)
-![Status](https://img.shields.io/badge/Status-In%20progress-orange)
-
 ---
 
 ## Table of Contents
 
 1. [Aim](#aim)
 2. [Features](#features)
-3. [Repository Structure](#repository-structure)
-4. [How to Run](#how-to-run)
-5. [Theory](#theory)
-6. [Signal Generation](#1-signal-generation)
-7. [Implementation](#2-implementation)
-8. [Filter Operation and Analysis](#3-filter-operation-and-analysis)
-9. [Test and Results](#4-test-and-results)
-10. [Troubleshooting Notes](#5-troubleshooting-notes)
-11. [Limitations and Future Work](#6-limitations-and-future-work)
-12. [Conclusion](#7-conclusion)
+3. [How to Run](#how-to-run)
+4. [Theory](#theory)
+5. [Signal Generation](#1-signal-generation)
+6. [Implementation](#2-implementation)
+7. [Filter Operation and Analysis](#3-filter-operation-and-analysis)
+8. [Test and Results](#4-test-and-results)
+9. [Troubleshooting Notes](#5-troubleshooting-notes)
+10. [Limitations and Future Work](#6-limitations-and-future-work)
+11. [Conclusion](#7-conclusion)
 
 ---
 
@@ -38,23 +33,7 @@ To generate a composite signal containing multiple frequency components and whit
 - Time-domain graphs for the clean, noisy and filtered signals.
 - Frequency-domain graphs (FFT magnitude) for the noisy and filtered signals.
 
-## Repository Structure
 
-> Adjust this to match your actual repository.
-
-```
-.
-├── README.md
-├── SELF EXERCISE 1.lvproj      # LabVIEW project
-├── Filters.vi                  # Main VI (front panel + block diagram)
-└── images/
-    ├── front_panel.png
-    ├── block_diagram.png
-    ├── lowpass_result.png
-    ├── highpass_result.png
-    ├── bandpass_result.png
-    └── bandstop_result.png
-```
 
 ## How to Run
 
@@ -185,7 +164,6 @@ A *Filter Parameters* cluster provides:
 - Original Noisy Signal - Frequency Spectrum
 - Filtered Signal - Frequency Spectrum
 
-![Front panel](images/front_panel.png)
 
 ### B. Block Diagram
 
@@ -236,7 +214,6 @@ The cutoff inputs are exposed on the block diagram and wired to the *Filter Para
 
 The common filtered waveform goes to a second Spectral Measurements Express VI with the same settings (Magnitude Peak, Linear, Hanning, no averaging), and its FFT magnitude is shown on the *Filtered Signal - Frequency Spectrum* graph.
 
-![Block diagram](images/block_diagram.png)
 
 ---
 
@@ -315,15 +292,7 @@ The VI was tested by selecting each filter type with the enum and observing the 
 
 > The results for tests 3 and 4 are the expected behaviour. Record the observations here after running them, and add screenshots to `images/`.
 
-### Result screenshots
 
-| Lowpass | Highpass |
-|---|---|
-| ![Lowpass](images/lowpass_result.png) | ![Highpass](images/highpass_result.png) |
-
-| Bandpass | Bandstop |
-|---|---|
-| ![Bandpass](images/bandpass_result.png) | ![Bandstop](images/bandstop_result.png) |
 
 ### How to check a result
 
@@ -365,10 +334,3 @@ The performance of the filters was analysed using time-domain waveforms and freq
 
 ---
 
-## Author
-
-*Your name, course, institution and date.*
-
-## License
-
-*Add a license here (for example MIT), or remove this section.*
